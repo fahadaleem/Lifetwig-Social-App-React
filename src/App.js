@@ -1,24 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
-
+import CustomAppBar from "./Components/AppBar"
+import ResponsiveDrawer from "./Components/Drawer"
+import PrimarySearchAppBar from "./Components/NewAppBar"
+import Navbar from "./Components/SimpleAppBar"
+import Post from "./Components/Posts"
+import PublishedPost from "./Components/PublishedPosts"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+    <CustomAppBar />
+    <Post />
+    <PublishedPost />
+    <PublishedPost />
+
+   </div>
   );
 }
 
